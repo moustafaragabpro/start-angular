@@ -1,0 +1,18 @@
+.portfolio {
+  min-height: 100vh;
+}
+.portfolio-overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 0.9;
+}

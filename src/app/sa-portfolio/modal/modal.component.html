@@ -1,0 +1,42 @@
+<div class="modal fade" [id]="id" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content position-relative">
+      <div class="text-end">
+        <i
+          type="button"
+          class="fa-solid fa-xmark fa-3x pe-4 p-3 text-danger"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="modal-body mx-auto">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <app-heading
+              [title]="title"
+              [lineBgColor]="'bg-dark'"
+            ></app-heading>
+
+            <div class="p-4 text-center">
+              <img [src]="ingSrc" alt="" class="w-100 rounded" />
+
+              <p class="lead mt-4">
+                {{ desc }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn btn-main mb-4 px-4 text-white"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

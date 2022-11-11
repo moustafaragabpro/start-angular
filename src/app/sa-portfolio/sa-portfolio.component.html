@@ -1,0 +1,28 @@
+<section class="portfolio center-items flex-column py-5 mt-5">
+  <app-heading [title]="'Portfolio'" [lineBgColor]="'bg-dark'"></app-heading>
+
+  <div class="container mt-4">
+    <div class="row gy-3">
+      <div class="col-md-6 col-lg-4" *ngFor="let item of portfolioItems">
+        <div class="portfolio-item position-relative rounded overflow-hidden">
+          <div class="portfolio-img">
+            <img [src]="item.imgSrc" alt="portfolio image" class="w-100" />
+          </div>
+          <div class="portfolio-overlay">
+            <i
+              class="fa-solid fa-plus fa-4x w-100 h-100 center-items"
+              data-bs-toggle="modal"
+              [attr.data-bs-target]="'#' + item.id"
+            ></i>
+          </div>
+          <app-modal
+            [id]="item.id"
+            [title]="item.modalTitle"
+            [ingSrc]="item.imgSrc"
+            [desc]="item.modalDesc"
+          ></app-modal>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

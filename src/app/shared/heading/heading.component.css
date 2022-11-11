@@ -1,0 +1,36 @@
+h2 {
+  text-transform: uppercase;
+}
+
+.heading-star {
+  text-align: center;
+  position: relative;
+}
+.line {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+/* .heading-star::before {
+    content: '';
+    position: absolute;
+    top:50%;
+    width: 90px;
+    height: 4px;
+    border-radius: 8px;
+    transform: translateY(-50%) translateX(-100px);
+    background-color: #aaa;
+}
+.heading-star::after {
+    content: '';
+    position: absolute;
+    top:50%;
+    width: 90px;
+    height: 4px;
+    border-radius: 8px;
+    transform: translateY(-50%) translateX(10px);
+    background-color: #aaa;
+} */

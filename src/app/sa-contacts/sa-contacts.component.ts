@@ -6,13 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sa-contacts.component.css'],
 })
 export class SaContactsComponent implements OnInit {
-  isInputEmpty: boolean = false;
+  isInputEmpty: any = {
+    nameInput: false,
+    emailImput: false,
+    phoneInput: false,
+    messageInput: false,
+  };
 
   constructor() {}
 
   ngOnInit(): void {}
 
   handleInput(e: any) {
-    this.isInputEmpty = e.target.value.length !== 0 ? true : false;
+    this.isInputEmpty[e.target.id] = e.target.value.length !== 0 ? true : false;
   }
 }

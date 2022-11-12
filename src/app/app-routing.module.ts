@@ -6,6 +6,7 @@ import { SaHomeComponent } from './sa-home/sa-home.component';
 import { SaPortfolioComponent } from './sa-portfolio/sa-portfolio.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: SaHomeComponent },
   { path: 'portfolio', component: SaPortfolioComponent },
   { path: 'about', component: SaAboutComponent },

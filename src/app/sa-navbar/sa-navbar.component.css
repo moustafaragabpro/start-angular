@@ -6,8 +6,15 @@
 }
 .link-active:hover {
   color: #fff !important;
-  background-color: #17a287;
+  background-color: var(--main-color-dark);
 }
 .nav-link:hover {
   color: var(--main-color);
+}
+
+.navbar-toggler {
+  font-size: 16px;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }

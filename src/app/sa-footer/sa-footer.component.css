@@ -1,0 +1,17 @@
+.footer-icon {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #fff;
+  margin: 0 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-icon:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.footer-icon i {
+  font-size: 22px;
+}

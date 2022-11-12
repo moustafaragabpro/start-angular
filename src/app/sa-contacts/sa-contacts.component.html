@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row gap-2 justify-content-center">
       <div class="col-lg-8">
-        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+        <div [ngClass]="{ 'form-floating': isInputEmpty.nameInput }">
           <input
             type="text"
             class="form-control border-bottom"
@@ -14,13 +14,13 @@
           />
           <label
             for="nameInput"
-            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            [ngStyle]="{ display: isInputEmpty.nameInput ? 'block' : 'none' }"
             >Name</label
           >
         </div>
       </div>
       <div class="col-lg-8">
-        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+        <div [ngClass]="{ 'form-floating': isInputEmpty.emailImput }">
           <input
             type="email"
             class="form-control border-bottom"
@@ -30,13 +30,13 @@
           />
           <label
             for="emailImput"
-            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            [ngStyle]="{ display: isInputEmpty.emailImput ? 'block' : 'none' }"
             >Email</label
           >
         </div>
       </div>
       <div class="col-lg-8">
-        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+        <div [ngClass]="{ 'form-floating': isInputEmpty.phoneInput }">
           <input
             type="text"
             class="form-control border-bottom"
@@ -46,26 +46,31 @@
           />
           <label
             for="phoneInput"
-            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            [ngStyle]="{ display: isInputEmpty.phoneInput ? 'block' : 'none' }"
             >Phone Number</label
           >
         </div>
       </div>
       <div class="col-lg-8">
-        <div [ngClass]="{ 'form-floating': isInputEmpty }">
-          <input
-            type="email"
+        <div [ngClass]="{ 'form-floating': isInputEmpty.messageInput }">
+          <textarea
             class="form-control border-bottom"
-            id="floatingInput"
-            placeholder="Email address"
+            id="messageInput"
+            placeholder="Message"
+            style="height: 200px"
             (keyup)="handleInput($event)"
-          />
+          ></textarea>
           <label
-            for="floatingInput"
-            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
-            >Email address</label
+            for="messageInput"
+            [ngStyle]="{
+              display: isInputEmpty.messageInput ? 'block' : 'none'
+            }"
+            >Message</label
           >
         </div>
+      </div>
+      <div class="col-lg-8">
+        <button class="btn btn-main py-2 px-4 btn-lg mt-3">Send</button>
       </div>
     </div>
   </div>

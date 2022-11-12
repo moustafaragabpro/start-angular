@@ -1,6 +1,5 @@
 header {
   min-height: 100vh;
-  background-color: var(--main-color);
 }
 .header-img {
   width: 12rem;

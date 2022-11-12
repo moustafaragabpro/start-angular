@@ -1,1 +1,72 @@
-<p>sa-contacts works!</p>
+<section class="contacts center-items flex-column py-5 mt-5">
+  <app-heading [title]="'contact Me'" [lineBgColor]="'bg-dark'"></app-heading>
+
+  <div class="container">
+    <div class="row gap-2 justify-content-center">
+      <div class="col-lg-8">
+        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+          <input
+            type="text"
+            class="form-control border-bottom"
+            id="nameInput"
+            placeholder="Name"
+            (keyup)="handleInput($event)"
+          />
+          <label
+            for="nameInput"
+            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            >Name</label
+          >
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+          <input
+            type="email"
+            class="form-control border-bottom"
+            id="emailImput"
+            placeholder="Email"
+            (keyup)="handleInput($event)"
+          />
+          <label
+            for="emailImput"
+            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            >Email</label
+          >
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+          <input
+            type="text"
+            class="form-control border-bottom"
+            id="phoneInput"
+            placeholder="Phone Number"
+            (keyup)="handleInput($event)"
+          />
+          <label
+            for="phoneInput"
+            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            >Phone Number</label
+          >
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div [ngClass]="{ 'form-floating': isInputEmpty }">
+          <input
+            type="email"
+            class="form-control border-bottom"
+            id="floatingInput"
+            placeholder="Email address"
+            (keyup)="handleInput($event)"
+          />
+          <label
+            for="floatingInput"
+            [ngStyle]="{ display: isInputEmpty ? 'block' : 'none' }"
+            >Email address</label
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

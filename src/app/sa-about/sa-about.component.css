@@ -1,0 +1,11 @@
+.about {
+  min-height: 100vh;
+}
+.about-container {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.contacts {
+  min-height: 100vh;
+}
+.form-control {
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+  height: calc(4.5rem + 2px);
+  line-height: 1.25;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-floating > .form-control:not(:placeholder-shown),
+.form-control {
+  padding-top: 2.2rem;
+  padding-bottom: 0.8rem;
+}
+
+.form-floating > .form-control:focus:not(:placeholder-shown) ~ label {
+  color: var(--main-color);
+}

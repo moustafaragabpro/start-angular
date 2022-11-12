@@ -3,23 +3,31 @@
 
   <div class="container mt-4">
     <div class="row gy-3">
-      <div class="col-md-6 col-lg-4" *ngFor="let item of portfolioItems">
+      <div
+        class="col-md-6 col-lg-4"
+        *ngFor="let portfolioItem of portfolioItems"
+      >
         <div class="portfolio-item position-relative rounded overflow-hidden">
           <div class="portfolio-img">
-            <img [src]="item.imgSrc" alt="portfolio image" class="w-100" />
+            <img
+              [src]="portfolioItem.imgSrc"
+              alt="portfolio image"
+              class="w-100"
+            />
           </div>
           <div class="portfolio-overlay">
             <i
               class="fa-solid fa-plus fa-4x w-100 h-100 center-items"
               data-bs-toggle="modal"
-              [attr.data-bs-target]="'#' + item.id"
+              [attr.data-bs-target]="'#' + portfolioItem.id"
             ></i>
           </div>
+          <!-- * Modal -->
           <app-modal
-            [id]="item.id"
-            [title]="item.modalTitle"
-            [ingSrc]="item.imgSrc"
-            [desc]="item.modalDesc"
+            [id]="portfolioItem.id"
+            [title]="portfolioItem.modalTitle"
+            [ingSrc]="portfolioItem.imgSrc"
+            [desc]="portfolioItem.modalDesc"
           ></app-modal>
         </div>
       </div>

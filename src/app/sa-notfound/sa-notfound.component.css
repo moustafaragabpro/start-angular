@@ -1,0 +1,13 @@
+.notfound {
+  min-height: 100vh;
+}
+
+.nf-img {
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .nf-img {
+    width: 80%;
+  }
+}

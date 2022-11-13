@@ -12,6 +12,7 @@ import { SaNavbarComponent } from './sa-navbar/sa-navbar.component';
 import { SaFooterComponent } from './sa-footer/sa-footer.component';
 import { HeadingComponent } from './shared/heading/heading.component';
 import { ModalComponent } from './sa-portfolio/modal/modal.component';
+import { SaNotfoundComponent } from './sa-notfound/sa-notfound.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalComponent } from './sa-portfolio/modal/modal.component';
     SaNavbarComponent,
     SaFooterComponent,
     HeadingComponent,
-    ModalComponent
+    ModalComponent,
+    SaNotfoundComponent
   ],
   imports: [
     BrowserModule,
